@@ -155,3 +155,10 @@ Además, se construyó un dataset completo de productos de múltiples marcas, qu
 - **Erick Cárdenas**
 - **Santiago Bravo**
 - **Manuel Vicente**
+
+---
+Pregunta para el trabajo final: ¿Cómo podría un atacante manipular los datos visibles en la página web para insertar contenido malicioso que se propague al archivo generado y afecte a quien lo abra en herramientas como Excel?
+
+El manejo de los datos dentro del sistema, aquellos que se almacenan en el historial y pueden ser exportados, introduce un riesgo relacionado con la manipulación de contenido por parte de usuarios maliciosos. Si no se aplican controles adecuados de validación y sanitización, un atacante puede insertar datos que aparentan ser inofensivos en la interfaz web, contienen instrucciones que serán interpretadas como fórmulas al abrirse en herramientas como Microsoft Excel.
+Este tipo de vulnerabilidad de inyección de fórmulas en archivos CSV o Excel, no compromete directamente al servidor, pero sí traslada el riesgo al usuario final. Al abrir el archivo, el software puede ejecutar automáticamente dichas fórmulas, lo que puede derivar en la apertura de enlaces maliciosos, la ejecución de comandos o la exposición de información sensible. En este sentido, el impacto es significativo porque afecta la integridad de los datos y la seguridad del usuario, ampliando el alcance del ataque más allá del sistema original. Esto resalta la importancia de tratar cualquier dato ingresado por el usuario como peligroso, incluso cuando su destino final es un archivo de salida.
+
